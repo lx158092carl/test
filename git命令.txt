@@ -1,0 +1,57 @@
+1.基本信息设置
+设置用户名：
+ git config --global user.name 'lx158092carl'
+设置用户邮箱：
+git config --global user.email 'lx158092@163.com'
+
+2.初始化一个新的git仓库
+创建文件夹：
+mkdir test
+在文件夹内初始化git（创建git仓库）
+cd test
+git init
+
+3.向仓库中添加文件
+创建文件：
+touch a1.java
+查看状态：
+git status
+将文件添加到暂存区
+git add a1.java
+将文件提交到仓库
+git commit -m '提交描述'
+
+4.修改仓库中的文件
+修改文件：
+vi a1.java      
+将文件添加到暂存区
+git add a1.java
+将文件提交到仓库
+git commit -m '提交描述'
+
+5.删除仓库文件
+删除文件：
+rm a1.java
+从git中删除文件：
+git rm a1.java
+提交操作：
+git commit -m '提交描述'
+
+6.git管理远程仓库
+使用远程仓库的目的：
+作用：备份，实现代码共享集中化管理
+
+git克隆操作：
+目的：将远程仓库（github对应的项目）复制到本地
+git clone 仓库地址
+
+验证：git config --list
+
+将本地仓库同步到git远程仓库：
+git push
+
+
+
+
+
+
